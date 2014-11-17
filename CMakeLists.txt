@@ -5,25 +5,25 @@ SET (CMAKE_BUILD_TYPE Release)
 
 SET (CMAKE_VERBOSE_MAKEFILE ON)
 
-INCLUDE_DIRECTORIES( ../../Framework/Framework/ .)
+INCLUDE_DIRECTORIES( Framework/ include/ .)
 
-LINK_DIRECTORIES( ../../Framework/Framework/build)
+LINK_DIRECTORIES( Framework/build)
 
-SET (SRC 	main.cpp
-			ArbolRobot.cpp
-			CttesRobot.cpp
-			EvalRobot.cpp
-			FactoryRobot.cpp
-			GArbolRobot.cpp
-			GirarDer.cpp
-			GirarIzq.cpp
-			IndRobot.cpp
-			Mapa.cpp
-			Mover.cpp
-			ObstaculoAdelante.cpp
-			PastoAdelante.cpp
-			Robot.cpp
-			Serie.cpp )
+SET (SRC 	src/main.cpp
+			src/ArbolRobot.cpp
+			src/CttesRobot.cpp
+			src/EvalRobot.cpp
+			src/FactoryRobot.cpp
+			src/GArbolRobot.cpp
+			src/GirarDer.cpp
+			src/GirarIzq.cpp
+			src/IndRobot.cpp
+			src/Mapa.cpp
+			src/Mover.cpp
+			src/ObstaculoAdelante.cpp
+			src/PastoAdelante.cpp
+			src/Robot.cpp
+			src/Serie.cpp )
 
 SET (CMAKE_CXX_FLAGS "-fmessage-length=0")
 

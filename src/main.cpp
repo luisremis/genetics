@@ -52,7 +52,7 @@ void inicializar(){
     // Parametros del Genetico
     Arquitectura *a = new Arquitectura(100, 100, 70, 30, 1);
     Genetico *genetico = Genetico::getGenetico();
-    genetico->setGeneraciones(6000);
+    genetico->setGeneraciones(500);
     genetico->setArquitectura(a);
     genetico->setOEval(new EvalRobot());
     genetico->setOSel(new SUS(a->getPorcentajeSeleccion(), g));
